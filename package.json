@@ -17,9 +17,6 @@
     "type": "git",
     "url": "git://github.com/omgheyariel/csp-node-printer.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "devDependencies": {
     "nodeunit": "*",
     "prebuild": "^9.1.1",
