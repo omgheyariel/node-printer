@@ -1,13 +1,14 @@
 {
-  "name": "csp-node-printer",
+  "name": "node-printer",
   "description": "Node.js printer bindings",
   "version": "0.5.2",
-  "homepage": "https://github.com/thiagoelg/node-printer",
+  "homepage": "https://github.com/omgheyariel/node-printer",
   "author": {
     "name": "Ariel German",
     "email": "ariel@cellsmartpos.com"
   },
   "contributors": [
+    "Ariel German <arieljose06@gmail.com>"
     "Thiago Lugli <thiagoelg@gmail.com>",
     "Eko Eryanto <ekoeryanto@gmail.com>",
     "Name Lastname <email@server.com>"
