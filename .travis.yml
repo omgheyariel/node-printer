@@ -18,8 +18,8 @@
 #     fi
 #   - "export JOBS=4"
 # before_script:
-#   - git config --global user.name "Ion Lupascu"
-#   - git config --global user.email ionlupascu@gmail.com
+#   - git config --global user.name "Ariel German"
+#   - git config --global user.email arieljose06@gmail.com
 #   - npm ci
 
 # Need S3 Upload for Artifacts
@@ -29,13 +29,11 @@
 #     paths:
 #     - ./build/stage/**/*.tar.gz
 
-
 # os:
 #   - linux
 #   # - osx
 
 # script: npx prebuild -t 12.12.0 --arch ia32 -u $PREBUILD_TOKEN
-
 
 language: node_js
 node_js:
@@ -43,8 +41,8 @@ node_js:
 
 branches:
   only:
-  - master
-  
+    - master
+
 env:
   global:
     - JOBS=4
@@ -55,9 +53,9 @@ cache:
     - $HOME/.npm/_prebuilds
 
 before_script:
-- if [[ $TRAVIS_OS_NAME == "linux" ]]; then export CXX='g++-4.8'; fi
-- git config --global user.name "Thiago Lugli"
-- git config --global user.email thiagoelg@gmail.com
+  - if [[ $TRAVIS_OS_NAME == "linux" ]]; then export CXX='g++-4.8'; fi
+  - git config --global user.name "Thiago Lugli"
+  - git config --global user.email thiagoelg@gmail.com
 
 script:
   - npx prebuild --strip --all -r electron --arch ia32 -u $PREBUILD_TOKEN
@@ -79,5 +77,5 @@ addons:
       - libcups2-dev
       - libcups2-dev:i386
       - libc6-dev-i386
-      - linux-libc-dev 
+      - linux-libc-dev
       - linux-libc-dev:i386
