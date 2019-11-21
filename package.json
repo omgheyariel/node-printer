@@ -8,7 +8,7 @@
     "email": "ariel@cellsmartpos.com"
   },
   "contributors": [
-    "Ariel German <arieljose06@gmail.com>"
+    "Ariel German <arieljose06@gmail.com>",
     "Thiago Lugli <thiagoelg@gmail.com>",
     "Eko Eryanto <ekoeryanto@gmail.com>",
     "Name Lastname <email@server.com>"
@@ -16,6 +16,9 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/omgheyariel/csp-node-printer.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
     "nodeunit": "*",
